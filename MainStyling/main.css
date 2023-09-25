@@ -452,6 +452,7 @@ hr {
   padding: 0rem;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  color: white;
 }
 .book-table form input:last-child:hover {
   background-color: #fa0738;
