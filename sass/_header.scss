@@ -1,0 +1,57 @@
+// Mixins
+@use "mixins" as *;
+
+// Variables
+@use "variables" as *;
+
+.main-header {
+    @include flex(row, space-between, center);
+    background-color: $primary-color;
+    height: 80rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1rem solid rgb(255 255 255 / 10%);
+
+    ul {
+        display: flex
+    }
+    
+    ul.left-nav {
+        li {
+            margin-left: 60rem;
+        }
+    }
+    
+    ul.right-nav {
+        li {
+         margin-right: 60rem;
+        }
+    }
+    
+    ul {
+        li {
+            a{
+                color: white;
+                font-weight: 600;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    
+    ul {
+        li {
+            a:hover {
+                color: $sec-color;
+            }
+        }
+    }
+
+    .logo {
+        font-size: 30rem;
+        font-weight: 700;
+        color: $sec-color;
+    }
+}
+
+

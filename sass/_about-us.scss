@@ -1,0 +1,45 @@
+// Variables
+@use "variables" as *;
+
+// Mixins
+@use "mixins" as *;
+
+.about-us {
+    @include flex(row, flex-start, stretch)
+}
+
+.about-us {
+    .img {
+        width: 45%;
+        background-image: url('../images/corwason.webp');
+        background-size: cover;
+        height: 843rem;
+    }
+
+    .for-centaring {
+        width: 55%;
+        background-color: $primary-color;
+        position: relative;
+
+        .info {
+            color: white;
+            width: 70%;
+            @include center;
+            
+            h3,
+            p {
+                margin-bottom: 30rem;
+                font-weight: 400;
+            }
+
+            h3 {
+                font-size: 35rem;
+                font-weight: 500;
+            }
+
+            .bold {
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+// Variables
+@use "variables" as *;
+
+// Mixins
+@use "mixins" as *;
+
+main {
+    padding-top: 80rem;
+}
+
+.landing-sec {
+    height: 550rem;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 20%;
+}
+
+.landing-sec {
+    .overlay {
+        background-color:  rgb(53 59 65 / 75%);
+        height: 100%;
+        position: relative;
+    }
+}
+
+.landing-sec {
+    .overlay {
+        .info {
+            @include center;
+            text-align: center;
+        }
+    }
+}
+
+.landing-sec {
+    .overlay {
+        .info {
+            h1 {
+                color: white;
+                font-size: 80rem;
+            }
+            
+            h2 {
+                color: white;
+                font-size: 50rem;
+                font-weight: 500;
+                white-space: nowrap;
+            }
+
+            a {
+                color: white;
+                background-color: $sec-color;
+                padding: 15rem 25rem;
+                display: inline-block; 
+                margin-top: 28.635rem;
+                border-radius: 5rem;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color:  #fa0738;
+                }
+            }
+        }
+    }
+}
+
+
+

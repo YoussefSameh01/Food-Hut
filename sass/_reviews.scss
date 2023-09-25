@@ -1,0 +1,80 @@
+// Mixins
+@use "mixins" as *;
+
+// Variables
+@use "variables" as *;
+
+.reviews {
+    position: relative;
+
+    .title {
+        padding: 60rem 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+        h3 {
+            color: white;
+            font-size: 60rem;
+            font-weight: 400;
+        }
+    }
+
+    .clear {
+        height: 201.82rem;
+    }
+
+    .flex {
+        @include flex(row, space-between, stretch);
+        padding: 0 20rem;
+        margin: 0 auto 80rem;
+        width: 1148.48rem;
+
+        .review {
+            width: 340rem;
+        }
+
+        .person {
+            text-align: center;
+
+            h3 {
+                color: white;
+                font-weight: 500;
+                font-size: 25rem;
+                margin-bottom: 5rem;
+            }
+
+            p {
+                color: white;
+                opacity: 0.8;
+                font-size: 13rem;
+                margin-bottom: 20rem;
+            }
+        }
+
+        .info {
+            border: 1rem solid rgb(255 255 255 / 10%);
+            border-top: 2rem solid $sec-color;
+            padding: 20rem;
+            padding-bottom: 35rem;
+            text-align: center;
+            color: white;
+            font-size: 14rem;
+            font-weight: 400;
+            position: relative;
+
+            p::before {
+                content:"";
+                width: 20rem;
+                height: 20rem;
+                background-color: $primary-color;
+                position: absolute;
+                top: -4rem;
+                left: 50%;
+                transform: rotate(45deg) translate(-50%);
+                border-top: 2rem solid $sec-color;
+                border-left: 2rem solid $sec-color;
+            }
+        }
+    }
+}

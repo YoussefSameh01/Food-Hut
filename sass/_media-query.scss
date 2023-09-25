@@ -1,0 +1,414 @@
+// Variables
+@use "variables" as *;
+
+// Mixins
+@use "mixins" as *;
+
+// Humburger menu & overflow
+
+@media (max-width: 1022px) {
+    :root,
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-header {
+        display: none;
+    }
+
+    .humburger-logo {
+        display: block !important;
+    }
+
+    .landing-sec {
+        height: 630rem;
+        margin-top: -80rem;
+    }
+
+    input[type="checkbox"]:checked + nav {
+        transform: translate(0);
+    }
+}
+
+@media (max-width: 1022px) {
+    :root {
+        font-size: 0.5px;
+    }
+
+    .our-menu .flex,
+    .reviews .flex,
+    .book-table form {
+        width: 100%;
+    }
+
+    .landing-sec {
+        height: 1030rem;
+    }
+
+    .about-us .for-centaring .info {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .about-us .for-centaring .info h3 {
+        margin-top: 30rem;
+    }
+
+    .about-us .for-centaring {
+        width: 50%;
+    }
+
+    .about-us .img {
+        width: 50%
+    }
+
+    .our-menu .title {
+        width: 420rem;
+        white-space: nowrap;
+        height: 310rem;
+    }
+
+    .our-menu .title button:first-of-type {
+        width: 210rem
+    }
+
+    .our-menu .title button:last-of-type {
+        width: 210rem
+    }
+
+    .our-menu .title h3 {
+        text-align: center;
+    }
+
+    .our-menu .clear {
+        height: 310rem;
+    }
+
+    .our-menu .card {
+        margin: auto
+    }
+
+    
+    .our-menu .card {
+        width: 460rem;
+        height: 620rem;
+    }
+
+    .our-menu .info p:first-child {
+        font-size: 35rem;
+    }
+
+    .our-menu .info p:nth-child(2) {
+        font-size: 30rem;
+    }
+    
+    .our-menu .info p:last-child {
+        font-size: 24rem;
+    }
+
+    .our-menu .card:not(:last-child) {
+        margin-bottom: 60rem;
+    }
+
+    .our-menu .flex {
+        height: 4020rem;
+        padding: 0;
+    }
+
+    .reviews .flex .review {
+        margin: auto;
+        width: 460rem;
+    }
+
+    .reviews .flex .review:not(:last-child) {
+        margin-bottom: 60rem;
+    }
+    
+    .reviews .flex .person h3 {
+        font-size: 35rem;
+    }
+
+    .reviews .flex .person p {
+        font-size: 20rem;
+    }
+
+    
+    .reviews .flex .info {
+        font-size: 24rem;
+    }
+
+    .about-us .for-centaring .info h3 {
+        font-size: 40rem;
+    }
+
+     .about-us .for-centaring .info p {
+        font-size: 26rem;
+    }
+
+    .book-table form {
+        height: auto;
+        width: 460rem;
+        margin: auto;
+    }
+
+    .book-table form input {
+        width: 100%;
+        font-size: 20rem;
+    }
+
+    .book-table form input:not(:last-child) {
+        margin-bottom: 40rem;
+    }
+
+    .book-table .overlay {
+        padding: 80rem 0;
+    }
+
+    .book-table {
+        height: 691.34rem;
+    }
+
+    .map {
+        display: none;
+    }
+
+    footer .flex .for-centaring {
+        margin: auto;
+    }
+
+    footer .flex .for-centaring .info h3 {
+        font-size: 40rem;
+    }
+
+    footer .flex .for-centaring .info p {
+        font-size: 24rem;
+        width: 470rem;
+        margin-bottom: 30rem;
+    }
+
+    footer .flex .for-centaring .info .contacts {
+        width: 280rem;
+        @include flex(row, space-between, stretch)
+    }
+
+    footer .flex .for-centaring {
+        border: none;
+    }
+
+    footer .flex {
+        height: 530rem;
+        border-top: 1rem solid rgb(255 255 255 / 10%);
+        border-bottom: 1rem solid rgb(255 255 255 / 10%);
+        width: 550rem;
+        margin: auto;
+    }
+
+    footer .copyrights {
+        font-size: 20rem;
+        padding: 15rem 0;
+    }
+
+    .humburger-logo label i {
+        font-size: 40rem !important;
+        padding: 10rem 15rem;
+    }
+
+    .humburger-nav a {
+        font-size: 27rem;
+    }
+
+    .our-menu .flex {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .reviews .flex {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    hr {
+        width: 80%;
+        margin: 75rem auto 0;
+        display: block;
+    }
+
+    footer .flex .for-centaring .info .contacts i span {
+        font-size: 30rem;
+    }
+
+    footer .flex .for-centaring .info .contacts i {
+        font-size: 30rem;
+    }
+
+    .landing-sec,
+    .book-table {
+        background-attachment: scroll;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .landing-sec .overlay .info h2 {
+        font-size: 45rem;
+    }
+}
+
+@media (min-width: 451px) {
+    :root {
+        font-size: 0.6px;
+    }
+}
+
+@media (min-width: 551px) {
+    :root {
+        font-size: 0.7px;
+    }
+}
+
+@media (min-width: 651px) {
+    :root {
+        font-size: 0.8px;
+    }
+
+}
+
+@media (min-width: 751px) {
+    :root {
+        font-size: 0.9px;
+    }
+}
+
+@media (min-width: 851px) {
+    :root {
+        font-size: 0.95px;
+    }
+}
+
+@media (min-width: 900px) {
+    :root {
+        font-size: 1px;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1149px) {
+    .our-menu .flex,
+    .reviews .flex,
+    .book-table form {
+        width: 800rem;
+    }
+
+    .our-menu .flex {
+        height: 1660rem;
+    }
+
+    .reviews .flex .review:last-child {
+        margin:80rem auto 0;
+    }
+
+    .book-table form {
+        height: auto;
+        width: 460rem;
+        margin: auto;
+    }
+
+    .book-table form input {
+        width: 100%;
+        font-size: 20rem;
+    }
+
+    .book-table form input:not(:last-child) {
+        margin-bottom: 40rem;
+    }
+
+    .book-table .overlay {
+        padding: 80rem 0;
+    }
+
+    .book-table {
+        height: 691.34rem;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    :root {
+        font-size: 1.1px;
+    }
+
+    body {
+        font-size: 19px;
+    }
+
+    .our-menu .title button {
+        font-size: 17rem;
+    }
+
+    .reviews .flex .person p {
+        font-size: 16rem;
+    }
+
+    .reviews .flex .info {
+        font-size: 16rem;
+    }
+
+    footer .flex .for-centaring .info p {
+        font-size: 16rem;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .our-menu .title button {
+        font-size: 19rem;
+    }
+
+    .reviews .flex .person p {
+        font-size: 17rem;
+    }
+
+    .reviews .flex .info {
+        font-size: 17rem;
+    }
+
+    footer .flex .for-centaring .info p {
+        font-size: 17rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    :root {
+        font-size: 1.2px;
+    }
+
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 2000px) {
+    :root {
+        font-size: 1.4px;
+    }
+
+    body {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 2300px) {
+    :root {
+        font-size: 1.5px;
+    }
+
+    body {
+        font-size: 27px;
+    }
+}
+
+
+

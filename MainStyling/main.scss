@@ -1,0 +1,29 @@
+// Global rules
+@use "../sass/global-rules";
+
+// Header
+@use "../sass/header";
+
+// landing-sec
+@use "../sass/landing-sec";
+
+// About-us-sec
+@use "../sass/about-us";
+
+// Our-menu
+@use "../sass/our-menu";
+
+// Reviews
+@use "../sass/reviews";
+
+// Book-table
+@use "../sass/book-table";
+
+// Footer
+@use "../sass/footer";
+
+// Media-query
+@use "../sass/media-query";
+
+// Humburger-nav
+@use "../sass/humburger-nav";

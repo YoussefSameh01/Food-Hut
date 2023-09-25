@@ -1,0 +1,72 @@
+// Mixins
+@use "mixins" as *;
+
+// Variables
+@use "variables" as *;
+
+.book-table {
+    height: 430rem;
+    background-image: url("../images/table.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    
+    .overlay {
+        padding: 80rem 0;
+        background-color: rgb(53 59 65 / 40%);
+        height: 100%;
+    }
+
+    h3 {
+        color: white;
+        font-size: 60rem;
+        font-weight: 400;
+        margin-bottom: 40rem;
+    }
+
+    form {
+        @include flex2(row, space-between, space-between);
+        height: 148.18rem;
+        width: 1148.48rem;
+        margin: auto;
+        padding: 0 20rem;
+
+        input {
+            width: 260rem;
+            height: 50rem;
+            background-color: transparent;
+            border: 2.5rem solid white;
+            padding: 20rem;
+            font-size: 17rem;
+            transition: background-color 9999s ease-in-out 0s; // changing the background color add by chrome in auto-complete or box-shadow: 0 0 0 30px white inset !important;
+            -webkit-text-fill-color: white; // changing the text color
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:last-child {
+                margin: auto;
+                border: none;
+                background-color: $sec-color;
+                width: 169rem;
+                border-radius: 3rem;
+                padding: 0rem;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color:  #fa0738;
+                    cursor: pointer;
+                }
+            }
+
+            &:not(:last-child):focus {
+                border-color: $sec-color;
+                border-width: 2.5rem;
+                outline: 2.5rem solid #ff214d3f;
+                transition-duration: 0.1s;
+                transition: background-color 9999s ease-in-out 0s; // changing the background color add by chrome in auto-complete or box-shadow: 0 0 0 30px white inset !important;
+            }
+        }
+    }
+}
