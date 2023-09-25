@@ -34,15 +34,17 @@
         input {
             width: 260rem;
             height: 50rem;
-            background-color: transparent;
-            border: 2.5rem solid white;
+            border: 2.5rem solid rgb(175, 175, 175);
             padding: 20rem;
             font-size: 17rem;
-            transition: background-color 9999s ease-in-out 0s; // changing the background color add by chrome in auto-complete or box-shadow: 0 0 0 30px white inset !important;
-            -webkit-text-fill-color: white; // changing the text color
+
+            &:not(:last-child) {
+                box-shadow: 0 0 0 30px white inset !important; // changing the background color add by chrome in auto-complete
+                -webkit-text-fill-color: black; // changing the text color
+            }
 
             &::placeholder {
-                color: white;
+                color: black;
             }
 
             &:last-child {
@@ -65,7 +67,6 @@
                 border-width: 2.5rem;
                 outline: 2.5rem solid #ff214d3f;
                 transition-duration: 0.1s;
-                transition: background-color 9999s ease-in-out 0s; // changing the background color add by chrome in auto-complete or box-shadow: 0 0 0 30px white inset !important;
             }
         }
     }

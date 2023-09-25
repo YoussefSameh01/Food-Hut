@@ -26,14 +26,14 @@
 }
 
 .humburger-nav {
-    width: 170rem;
+    width: 200rem;
     background-color: rgb(52, 58, 64, 80%);
     height: 100vh;
     position: fixed;
     left: 0;
     z-index: 2;
     border-right: 1rem solid rgb(255 255 255 / 10%);
-    transform: translate(-170rem);
+    transform: translate(-200rem);
     transition-duration: 0.3s;
     direction: rtl;
 
